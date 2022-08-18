@@ -29,11 +29,6 @@ export const { addContact, deleteContact, changeFilter } =
 
 export default contactsSlice.reducer;
 
-//export const getContacts = state => state.contactsReducer.items;
+export const getContacts = state => state.contacts.items;
 
-export const getContacts = state => {
-  console.log(state);
-  return state.contactsReducer.items;
-};
-
-export const getFilter = state => state.contactsReducer.filter;
+export const getFilter = state => state.contacts.filter;
