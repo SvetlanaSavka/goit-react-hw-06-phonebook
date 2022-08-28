@@ -10,12 +10,12 @@ const Filter = () => {
     dispatch(changeFilter(event.currentTarget.value));
   };
   return (
-    <>
+    
       <label>
         Find contacts by name
         <input type="text" value={filter} onChange={handleFilter} />
       </label>
-    </>
+    
   );
 };
 
